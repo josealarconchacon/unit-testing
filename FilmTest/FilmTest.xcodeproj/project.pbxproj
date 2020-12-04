@@ -13,8 +13,9 @@
 		676C3310257A94F200CE1ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676C330E257A94F200CE1ADD /* Main.storyboard */; };
 		676C3312257A94F300CE1ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676C3311257A94F300CE1ADD /* Assets.xcassets */; };
 		676C3315257A94F300CE1ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676C3313257A94F300CE1ADD /* LaunchScreen.storyboard */; };
-		676C3320257A94F300CE1ADD /* FilmTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676C331F257A94F300CE1ADD /* FilmTestTests.swift */; };
 		676C332B257A94F300CE1ADD /* FilmTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676C332A257A94F300CE1ADD /* FilmTestUITests.swift */; };
+		676C333C257A978400CE1ADD /* MovieStructClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676C333B257A978400CE1ADD /* MovieStructClass.swift */; };
+		676C3344257A98AF00CE1ADD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676C3343257A98AF00CE1ADD /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +45,12 @@
 		676C3314257A94F300CE1ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		676C3316257A94F300CE1ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		676C331B257A94F300CE1ADD /* FilmTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		676C331F257A94F300CE1ADD /* FilmTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTestTests.swift; sourceTree = "<group>"; };
 		676C3321257A94F300CE1ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		676C3326257A94F300CE1ADD /* FilmTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		676C332A257A94F300CE1ADD /* FilmTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTestUITests.swift; sourceTree = "<group>"; };
 		676C332C257A94F300CE1ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		676C333B257A978400CE1ADD /* MovieStructClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStructClass.swift; sourceTree = "<group>"; };
+		676C3343257A98AF00CE1ADD /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,10 @@
 		676C3307257A94F200CE1ADD /* FilmTest */ = {
 			isa = PBXGroup;
 			children = (
+				676C334F257A9DD100CE1ADD /* Controllers */,
+				676C334E257A9DC800CE1ADD /* Models */,
 				676C3308257A94F200CE1ADD /* AppDelegate.swift */,
 				676C330A257A94F200CE1ADD /* SceneDelegate.swift */,
-				676C330C257A94F200CE1ADD /* ViewController.swift */,
 				676C330E257A94F200CE1ADD /* Main.storyboard */,
 				676C3311257A94F300CE1ADD /* Assets.xcassets */,
 				676C3313257A94F300CE1ADD /* LaunchScreen.storyboard */,
@@ -113,7 +116,8 @@
 		676C331E257A94F300CE1ADD /* FilmTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				676C331F257A94F300CE1ADD /* FilmTestTests.swift */,
+				676C3351257A9E1A00CE1ADD /* Test Controller */,
+				676C3350257A9DFC00CE1ADD /* Test Model */,
 				676C3321257A94F300CE1ADD /* Info.plist */,
 			);
 			path = FilmTestTests;
@@ -126,6 +130,37 @@
 				676C332C257A94F300CE1ADD /* Info.plist */,
 			);
 			path = FilmTestUITests;
+			sourceTree = "<group>";
+		};
+		676C334E257A9DC800CE1ADD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				676C3343257A98AF00CE1ADD /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		676C334F257A9DD100CE1ADD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				676C330C257A94F200CE1ADD /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		676C3350257A9DFC00CE1ADD /* Test Model */ = {
+			isa = PBXGroup;
+			children = (
+				676C333B257A978400CE1ADD /* MovieStructClass.swift */,
+			);
+			path = "Test Model";
+			sourceTree = "<group>";
+		};
+		676C3351257A9E1A00CE1ADD /* Test Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Test Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +233,7 @@
 					};
 					676C331A257A94F300CE1ADD = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 						TestTargetID = 676C3304257A94F200CE1ADD;
 					};
 					676C3325257A94F300CE1ADD = {
@@ -260,6 +296,7 @@
 			files = (
 				676C330D257A94F200CE1ADD /* ViewController.swift in Sources */,
 				676C3309257A94F200CE1ADD /* AppDelegate.swift in Sources */,
+				676C3344257A98AF00CE1ADD /* Movie.swift in Sources */,
 				676C330B257A94F200CE1ADD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				676C3320257A94F300CE1ADD /* FilmTestTests.swift in Sources */,
+				676C333C257A978400CE1ADD /* MovieStructClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +511,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6HD3SW977;
 				INFOPLIST_FILE = FilmTestTests/Info.plist;
@@ -485,6 +523,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = con.jose.FilmTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilmTest.app/FilmTest";
@@ -496,6 +535,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6HD3SW977;
 				INFOPLIST_FILE = FilmTestTests/Info.plist;
