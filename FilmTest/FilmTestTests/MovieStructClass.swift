@@ -1,5 +1,5 @@
 //
-//  FilmTestTests.swift
+//  MovieStructClass.swift
 //  FilmTestTests
 //
 //  Created by Jose Alarcon Chacon on 12/4/20.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import FilmTest
 
-class FilmTestTests: XCTestCase {
+class MovieStructClass: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
