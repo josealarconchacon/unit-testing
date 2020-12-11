@@ -12,7 +12,15 @@ class MovieManager {
     var movieToSeeCount = 0
     let movieSeenCount = 0
     
+    private var movieToSeeArray = [Movie]()
+    
+    
     func addMoview(movie: Movie) {
         movieToSeeCount += 1
+        movieToSeeArray.append(movie)
+    }
+    
+    func addMovieAtIndex(index: Int) -> Movie {
+        return movieToSeeArray[index]
     }
 }
