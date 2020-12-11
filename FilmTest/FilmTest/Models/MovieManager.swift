@@ -9,6 +9,10 @@ import Foundation
 
 
 class MovieManager {
-    let movieToSeeCount = 0
+    var movieToSeeCount = 0
     let movieSeenCount = 0
+    
+    func addMoview(movie: Movie) {
+        movieToSeeCount += 1
+    }
 }
